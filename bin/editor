@@ -1,0 +1,5 @@
+#!/bin/bash
+
+/usr/bin/tmux select-window -t emacs
+/usr/bin/emacsclient $@
+/usr/bin/tmux last-window

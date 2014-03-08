@@ -1,0 +1,6 @@
+"\C-[OD": beginning-of-line
+"\C-[OC": end-of-line
+"\C-f": forward-word
+"\C-b": backward-word
+"\e[A": history-search-backward
+"\e[B": history-search-forward
