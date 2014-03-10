@@ -47,7 +47,7 @@
 
 ;;; global key bindings
 
-(global-set-key "\C-a" 'my-beginning-of-line)
+(global-set-key (kbd "C-a") 'my-beginning-of-line)
 (global-set-key (kbd "C-<left>") 'my-beginning-of-line)
 (global-set-key (kbd "M-[ D") 'my-beginning-of-line)
 (global-set-key (kbd "C-<right>") 'my-end-of-line)
@@ -60,12 +60,12 @@
 (global-set-key (kbd "M-<down>") 'scroll-up-1-line)
 (global-set-key (kbd "ESC <up>") 'scroll-down-1-line)
 (global-set-key (kbd "M-<up>") 'scroll-down-1-line)
-(global-set-key "\C-f" 'forward-word)
-(global-set-key "\C-b" 'backward-word)
-(global-set-key "\C-c>" 'indent-lines-in-region)
-(global-set-key "\C-cw" 'pbcopy)
-(global-set-key "\C-cy" 'pbpaste)
-(global-set-key "\C-x\C-b" 'bs-show)
+(global-set-key (kbd "C-f") 'forward-word)
+(global-set-key (kbd "C-b") 'backward-word)
+(global-set-key (kbd "C-c >") 'indent-lines-in-region)
+(global-set-key (kbd "C-c w") 'pbcopy)
+(global-set-key (kbd "C-c y") 'pbpaste)
+(global-set-key (kbd "C-x C-b") 'bs-show)
 
 ;;; general functions
 
