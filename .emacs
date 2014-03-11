@@ -164,4 +164,7 @@ running `find-grep-dired', which doesn't run omit after completion."
     (setq regexp (mapconcat 'identity result "\\|"))
     (dired-omit-expunge regexp)))
 
+(require 'package)
+(package-initialize)
+
 ;;; .emacs ends here
