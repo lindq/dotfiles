@@ -1,6 +1,7 @@
 alias ls='ls --color=auto'
 alias ll='ls -alF'
 alias grep='grep --color=auto'
+alias rmpyc='find . -name \*.pyc -exec rm {} \;'
 
 umask 0022
 
