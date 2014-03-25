@@ -10,4 +10,4 @@ function parse-git-branch() {
     test -n "$br" && echo -n "($br)"
 }
 
-PS1="[\u@\h]\$(parse-git-branch):\w \$ "
+PS1="\[\033[01;32m\][\u@\h]\[\033[00m\]\$(parse-git-branch):\[\033[01;34m\]\w\[\033[00m\] \$ "
