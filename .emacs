@@ -7,6 +7,7 @@
 (setq ispell-program-name "aspell")
 (setq Man-notify-method 'bully)
 (setq truncate-partial-width-windows 100)
+(setq js-indent-level 2)
 
 (column-number-mode 1)
 (delete-selection-mode 1)
