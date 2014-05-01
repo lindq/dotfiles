@@ -1,6 +1,10 @@
-alias ls='ls --color=auto'
+alias_file=".bash_aliases_$(uname | tr '[:upper:]' '[:lower:]')"
+
+if [ -f "$HOME/$alias_file" ]; then
+    . "$HOME/$alias_file"
+fi
+
 alias ll='ls -alF'
-alias grep='grep --color=auto'
 alias rmpyc='find . -name \*.pyc -exec rm {} \;'
 
 umask 0022
