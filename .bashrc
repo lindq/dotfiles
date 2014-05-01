@@ -1,7 +1,6 @@
-alias_file=".bash_aliases_$(uname | tr '[:upper:]' '[:lower:]')"
-
-if [ -f "$HOME/$alias_file" ]; then
-    . "$HOME/$alias_file"
+if [ "$(uname)" = "Linux" ]; then
+    alias ls='ls --color=auto'
+    alias grep='grep --color=auto'
 fi
 
 alias ll='ls -alF'
