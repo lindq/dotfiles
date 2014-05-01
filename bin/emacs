@@ -1,4 +1,4 @@
 #!/bin/bash
 
-/usr/bin/tmux select-window -t emacs
-test ${#@} -gt 0 && /usr/bin/emacsclient -n $@
+/usr/local/bin/tmux select-window -t emacs
+test ${#@} -gt 0 && /usr/local/bin/emacsclient -n $@

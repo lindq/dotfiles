@@ -8,3 +8,7 @@ export PATH="$HOME/bin:$PATH"
 if [ -f "$HOME/.bashrc" ]; then
     . "$HOME/.bashrc"
 fi
+
+if [ -f "$HOME/.Xmodmap" ]; then
+    xmodmap "$HOME/.Xmodmap"
+fi
