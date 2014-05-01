@@ -1,9 +1,14 @@
-if [ "$(uname)" = "Linux" ]; then
-    alias ls='ls --color=auto'
-    alias grep='grep --color=auto'
-fi
+case "$(uname)" in
+    Linux)
+            alias ls='ls --color=auto'
+            ;;
+    Darwin)
+            alias ls='ls -G'
+            ;;
+esac
 
 alias ll='ls -alF'
+alias grep='grep --color=auto'
 alias rmpyc='find . -name \*.pyc -exec rm {} \;'
 
 umask 0022
