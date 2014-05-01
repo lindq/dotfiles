@@ -67,7 +67,6 @@
 (global-set-key (kbd "C-c w") 'pbcopy)
 (global-set-key (kbd "C-c y") 'pbpaste)
 (global-set-key (kbd "C-x C-b") 'bs-show)
-(global-set-key (kbd "C-/") 'undo)
 
 ;;; general functions
 
