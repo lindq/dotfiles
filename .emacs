@@ -123,6 +123,13 @@
         (untabify (1- (point)) (point-max)))
     ))
 
+(defun delete-extra-trailing-newlines ()
+  (save-excursion
+    (save-restriction
+      (widen)
+      (goto-char (point-max))
+      (delete-blank-lines))))
+
 (dolist (mode untabify-mode-list)
   (let ((hook (intern (concat (prin1-to-string mode) "-mode-hook"))))
     (add-hook hook
@@ -131,7 +138,8 @@
                 (set (make-local-variable 'show-trailing-whitespace) t)
                 (make-local-variable 'write-contents-functions)
                 (add-hook 'write-contents-functions 'untabify-buffer)
-                (add-hook 'write-contents-functions 'delete-trailing-whitespace))
+                (add-hook 'write-contents-functions 'delete-trailing-whitespace)
+                (add-hook 'write-contents-functions 'delete-extra-trailing-newlines))
               )))
 
 ;;; Dired mode
